@@ -9,7 +9,7 @@ function getIPAddress() {
     [[ -n "$ip_route" ]] && grep -oP "src \K[^\s]+" <<< "$ip_route"
 }
 
-function pie_ssh_welcome() {
+function pi_ssh_welcome() {
     local upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
     local secs=$((upSeconds%60))
     local mins=$((upSeconds/60%60))
@@ -120,4 +120,4 @@ function pie_ssh_welcome() {
     echo -e "\n$out"
 }
 
-pie_ssh_welcome
+pi_ssh_welcome
