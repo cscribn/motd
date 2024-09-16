@@ -8,6 +8,10 @@ if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
     DISTRIB_DESCRIPTION=$(lsb_release -s -d)
 fi
 
+MACHINE=$(uname -m)
+OPERATING_SYSTEM=$(uname -o)
+RELEASE=$(uname -r)
+
 function getIPAddress() {
     local ip_route
     ip_route=$(ip -4 route get 8.8.8.8 2>/dev/null)
@@ -96,7 +100,7 @@ function arkos_welcome() {
                 out+="${fggrn}$(cat /usr/share/plymouth/themes/text.plymouth | grep ArkOS | cut -c 7-50)"
                 ;;
             2)
-                out+="${fggrn}Based on %s (%s %s %s)\n" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
+                out+="${fggrn}Based on ${DISTRIB_DESCRIPTION} (${OPERATING_SYSTEM} ${RELEASE} ${MACHINE})\n"
                 ;;
             4)
                 out+="${fgylw}${df_out[0]}"
@@ -117,7 +121,7 @@ function arkos_welcome() {
                 out+="${fgred}IP Address.........: $(getIPAddress)"
                 ;;
             10)
-                out+="Temperature........: CPU: ${cpuTempC}°C/${cpuTempF}°F GPU: ${gpuTempC}°C/${gpuTempF}°F"
+                out+="${fgred}Temperature........: CPU: ${cpuTempC}°C/${cpuTempF}°F"
                 ;;
             11)
                 out+="${fgwht}ArkOS, https://github.com/christianhaitian/arkos/wiki"
