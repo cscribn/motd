@@ -4,7 +4,7 @@ Various "message of the day" files, intended to be called from scripts.
 
 ## motd-ark
 
-A version of <https://github.com/RetroPie/RetroPie-Setup> with a slightly different header and no logo.
+A version of <https://github.com/RetroPie/RetroPie-Setup> with a slightly different header and a sideways "A" logo.
 
 ## motd-retropie
 
