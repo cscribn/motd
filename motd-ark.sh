@@ -53,6 +53,10 @@ function arkos_welcome() {
         df_out+=("$line")
     done < <(df -h /roms)
 
+    while read line; do
+        df_out+=("$line")
+    done < <(df -h /roms2)
+
     local rst="$(tput sgr0)"
     local fgblk="${rst}$(tput setaf 0)" # Black - Regular
     local fgred="${rst}$(tput setaf 1)" # Red
