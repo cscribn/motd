@@ -101,7 +101,7 @@ function arkos_welcome() {
                 out+="${fggrn}$(cat /usr/share/plymouth/themes/text.plymouth | grep ArkOS | cut -c 7-50)"
                 ;;
             2)
-                out+="${fggrn}Based on ${DISTRIB_DESCRIPTION} (${OPERATING_SYSTEM} ${RELEASE} ${MACHINE})\n"
+                out+="${fggrn}Based on ${DISTRIB_DESCRIPTION} (${OPERATING_SYSTEM} ${RELEASE} ${MACHINE})"
                 ;;
             4)
                 out+="${fgylw}${df_out[0]}"
