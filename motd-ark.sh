@@ -74,19 +74,19 @@ function arkos_welcome() {
     local bfgwht="${bld}$(tput setaf 7)"
 
     local logo=(
-        "${bfgwht}@@${bfgred}-        "
-        "${bfgwht}@@@${fgred}%${bfgred}-.     "
-        "${fgred}%%${bfgwht}@@@${fgred}#${bfgred}-.   "
-        " ${bfgred}.${fgred}#%${bfgwht}@@@${fgred}*${bfgred}-. "
-        "${bfgred}.:::${fgred}#%${bfgwht}@@@${fgred}* "
-        "${fgred}#${bfgwht}@${fgred}#  ${bfgred}-${fgred}*%${bfgwht}@@ "
-        "${bfgwht}@@${fgred}#   ${bfgred}.${fgred}#${bfgwht}@@ "
-        "${bfgwht}@@${fgred}# ${bfgred}.=${fgred}*${bfgwht}@@@ "
-        "${bfgwht}@@${fgred}%${bfgred}=${fgred}*${bfgwht}@@@@${fgred}+ "
-        "${bfgwht}@@@@@@@${fgred}*${bfgred}=  "
-        "${bfgwht}@@@@@${fgred}*${bfgred}=.   "
-        "${bfgwht}@@@${fgred}#${bfgred}-.     "
-        "${bfgwht}@${fgred}%${bfgred}-:       "
+        "${bfgwht}@@${fgred}-        "
+        "${bfgwht}@@@${bfgred}%${fgred}-.     "
+        "${bfgred}%%${bfgwht}@@@${bfgred}#${fgred}-.   "
+        " ${fgred}.${bfgred}#%${bfgwht}@@@${bfgred}*${fgred}-. "
+        "${fgred}.:::${bfgred}#%${bfgwht}@@@${bfgred}* "
+        "${bfgred}#${bfgwht}@${bfgred}#  ${fgred}-${bfgred}*%${bfgwht}@@ "
+        "${bfgwht}@@${bfgred}#   ${fgred}.${bfgred}#${bfgwht}@@ "
+        "${bfgwht}@@${bfgred}# ${fgred}.=${bfgred}*${bfgwht}@@@ "
+        "${bfgwht}@@${bfgred}%${fgred}=${bfgred}*${bfgwht}@@@@${bfgred}+ "
+        "${bfgwht}@@@@@@@${bfgred}*${fgred}=  "
+        "${bfgwht}@@@@@${bfgred}*${fgred}=.   "
+        "${bfgwht}@@@${bfgred}#${fgred}-.     "
+        "${bfgwht}@${bfgred}%${fgred}-:       "
     )
 
     local out
