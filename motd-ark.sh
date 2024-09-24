@@ -74,12 +74,12 @@ function arkos_welcome() {
     local bfgwht="${bld}$(tput setaf 7)"
 
     local logo=(
-        "${bfgwht}@@${fgred}-        "
+        "${bfgwht}@@${bfgred}-        "
         "${bfgwht}@@@${fgred}%${bfgred}-.     "
         "${fgred}%%${bfgwht}@@@${fgred}#${bfgred}-.   "
         " ${bfgred}.${fgred}#%${bfgwht}@@@${fgred}*${bfgred}-. "
         "${bfgred}.:::${fgred}#%${bfgwht}@@@${fgred}* "
-        "${fgred}#${bfgwht}@${fgred}#  ${bfgred}-*${fgred}%${bfgwht}@@ "
+        "${fgred}#${bfgwht}@${fgred}#  ${bfgred}-${fgred}*%${bfgwht}@@ "
         "${bfgwht}@@${fgred}#   ${bfgred}.${fgred}#${bfgwht}@@ "
         "${bfgwht}@@${fgred}# ${bfgred}.=${fgred}*${bfgwht}@@@ "
         "${bfgwht}@@${fgred}%${bfgred}=${fgred}*${bfgwht}@@@@${fgred}+ "
